@@ -21,7 +21,7 @@ header {
 .header__nav__links {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
     color: #FFFFFF;
     font-family: 'Satoshi', sans-serif;
     font-size: 1.1rem;
@@ -32,6 +32,7 @@ header {
 
 .menu-bar {
     display: none;
+    cursor: pointer;
 }
 
 .enroll-btn {
@@ -52,7 +53,6 @@ header {
         right: 0;
         padding: 3rem 3rem;
         height: calc(100vh - 2rem);
-        gap: 2rem;
     }
 
     .nav-close {

@@ -1,11 +1,31 @@
 import logo from '../../techtime.png'
 import './header.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { useState } from 'react';
+import { useState } from "react";
 
 const Header = () => {
 
     const [showNav, setShowNav] = useState<boolean>(false);
+    // const menuRef = useRef<HTMLUListElement>(null!);
+    // useOnClickOutside(menuRef, () => setShowNav(false));
+
+    // function useOnClickOutside(menuRef, handler) {
+    //     useEffect(() => {
+    //         const listener = (event) => {
+    //             // Do nothing if clicking menuRef's element or descendent elements
+    //             if (!menuRef.current || menuRef.current.contains(event.target)) {
+    //                 return;
+    //             }
+    //             handler(event);
+    //         };
+    //         document.addEventListener("mousedown", listener);
+    //         document.addEventListener("touchstart", listener);
+    //         return () => {
+    //             document.removeEventListener("mousedown", listener);
+    //             document.removeEventListener("touchstart", listener);
+    //         };
+    //     }, [menuRef, handler]);
+    // }
 
     return (
         <header>
@@ -25,4 +45,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header;
