@@ -1,17 +1,17 @@
 import logo from '../../techtime.png'
 import './header.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
 
     const [showNav, setShowNav] = useState<boolean>(false);
-    // const menuRef = useRef<HTMLUListElement>(null!);
+    // const menuRef = useRef<HTMLUListElement | null>(null);
     // useOnClickOutside(menuRef, () => setShowNav(false));
 
-    // function useOnClickOutside(menuRef, handler) {
+    // function useOnClickOutside(menuRef: HTMLUListElement, handler: any) {
     //     useEffect(() => {
-    //         const listener = (event) => {
+    //         const listener = (event: any) => {
     //             // Do nothing if clicking menuRef's element or descendent elements
     //             if (!menuRef.current || menuRef.current.contains(event.target)) {
     //                 return;
@@ -30,7 +30,7 @@ const Header = () => {
     return (
         <header>
             <nav className='header__nav'>
-                <img src={logo} alt="" />
+                <img className='header__logo' src={logo} alt="logo" />
                 <ul className={showNav ? 'header__nav__links' : 'header__nav__links nav-close'}>
                     <li>Home</li>
                     <li>About Us</li>
@@ -45,4 +45,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default Header

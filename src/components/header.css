@@ -15,7 +15,11 @@ header {
     position: fixed;
     width: 100%;
     z-index: 10;
-    padding: 1.2rem clamp(1rem, 7vw, 10rem);
+    padding: 1rem clamp(1rem, 7vw, 10rem);
+}
+
+.header__logo {
+    height: 2.8rem;
 }
 
 .header__nav__links {
