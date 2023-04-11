@@ -5,6 +5,7 @@
 header {
     background: var(--header--bg);
     position: relative;
+    padding-bottom: 4.5rem;
 }
 
 .header__nav {
@@ -15,7 +16,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 10;
-    padding: 1rem clamp(1rem, 7vw, 10rem);
+    padding: 1rem clamp(1rem, 6vw, 10rem);
 }
 
 .header__logo {
@@ -27,7 +28,6 @@ header {
     align-items: center;
     gap: 2rem;
     color: #FFFFFF;
-    font-family: 'Satoshi', sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
     background: inherit;
@@ -42,8 +42,12 @@ header {
 .enroll-btn {
     background: #FFFFFF;
     color: var(--header--bg);
-    padding: 1rem 2rem;
+    padding: .7rem 1.5rem;
     border-radius: 4px;
+    font-size: 1.1rem;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 

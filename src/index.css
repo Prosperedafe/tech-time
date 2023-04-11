@@ -8,6 +8,10 @@
   --main-bg-color: #F8F9FC;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -23,7 +27,18 @@ li {
   cursor: pointer;
 }
 
-/* font-family: 'Satoshi',
-sans-serif; */
-/* font-family: 'Clash Grotesk',
-sans-serif; */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Clash Grotesk', sans-serif;
+}
+
+li,
+a,
+p,
+button,
+span {
+  font-family: 'Satoshi', sans-serif;
+}

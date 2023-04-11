@@ -2,6 +2,7 @@ import logo from '../../techtime.png'
 import './header.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useState, useEffect } from "react";
+import { Button } from './button';
 
 const Header = () => {
 
@@ -37,7 +38,9 @@ const Header = () => {
                     <li>Courses</li>
                     <li>Testimonial</li>
                     <li>Community</li>
-                    <li role='button' className='enroll-btn'>Enroll Now</li>
+                    <li>
+                        <Button className='enroll-btn' content='Enroll Now' />
+                    </li>
                 </ul>
                 {showNav ? < FaTimes className='menu-bar' onClick={() => setShowNav(!showNav)} size={25} color='#ffffff' /> : < FaBars className='menu-bar' onClick={() => setShowNav(!showNav)} size={25} color='#ffffff' />}
             </nav>

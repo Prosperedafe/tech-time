@@ -1,0 +1,172 @@
+:root {
+    --hero--bg: #004DB3;
+    --clr-neutral: #ffffff;
+}
+
+.green-dot {
+    position: absolute;
+    z-index: 1;
+    top: 6%;
+    left: 8rem;
+}
+
+.hero .wave-bg {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+}
+
+.hero .yellow-dot {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 40%;
+}
+
+.hero {
+    background: var(--hero--bg);
+    padding: 2rem clamp(1rem, 6vw, 10rem) 0 clamp(1rem, 6vw, 10rem);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.hero__topic {
+    color: var(--clr-neutral);
+    padding: 4rem 0;
+    flex-grow: 1;
+    flex-basis: 370px;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    max-width: 450px;
+}
+
+.hero .get-started {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    background: var(--header--bg);
+    padding: .8rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    gap: 5px;
+}
+
+.hero .followers {
+    display: flex;
+    align-items: center;
+}
+
+.hero .followers img {
+    margin-left: -1.5rem;
+    height: 4rem;
+}
+
+.hero .followers img:nth-child(1) {
+    margin-left: 0rem;
+    height: 4rem;
+}
+
+.hero .followers__number {
+    margin-left: 1rem;
+}
+
+.hero .followers__number p:nth-child(1) {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    font-family: 'Clash Grotesk', sans-serif;
+}
+
+.hero .followers__number p:nth-child(2) {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.hero figure {
+    flex-grow: 1;
+    flex-basis: 370px;
+    padding: 0;
+    position: relative;
+}
+
+.hero figure .bulb {
+    position: absolute;
+    z-index: 1;
+    height: clamp(7rem, 17vw, 13rem);
+    top: 2rem;
+    left: -3rem;
+}
+
+.hero figure .green {
+    position: absolute;
+    z-index: 1;
+    height: 25px;
+    top: 35%;
+    left: 2rem;
+}
+
+.hero figure .figma {
+    position: absolute;
+    z-index: 1;
+    height: clamp(3rem, 5vw, 13rem);
+    top: 55%;
+    left: -1rem;
+}
+
+.hero figure .vscode {
+    position: absolute;
+    z-index: 1;
+    height: clamp(3rem, 5vw, 13rem);
+    top: 10%;
+    right: 3rem;
+}
+
+.hero figure .triangle {
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+    right: 3rem;
+}
+
+.hero figure .wordpress {
+    position: absolute;
+    z-index: 1;
+    bottom: 1rem;
+    right: -1rem;
+    height: clamp(3rem, 5vw, 13rem);
+}
+
+.hero figure .dot {
+    position: absolute;
+    z-index: 1;
+    bottom: 1rem;
+    left: 2rem;
+}
+
+.hero figure .curve {
+    position: absolute;
+    z-index: 1;
+    height: clamp(3rem, 10vw, 13rem);
+    top: 57%;
+    left: -20%;
+}
