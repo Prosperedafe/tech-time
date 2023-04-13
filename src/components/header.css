@@ -41,13 +41,19 @@ header {
 
 .enroll-btn {
     background: #FFFFFF;
+    border: 1px solid white;
     color: var(--header--bg);
     padding: .7rem 1.5rem;
     border-radius: 4px;
     font-size: 1.1rem;
-    border: none;
     font-weight: 600;
     cursor: pointer;
+    transition: .3s;
+}
+
+.enroll-btn:hover {
+    color: white;
+    background: var(--header--bg);
 }
 
 

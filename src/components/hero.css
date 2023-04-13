@@ -37,7 +37,7 @@
 
 .hero__topic {
     color: var(--clr-neutral);
-    padding: 4rem 0;
+    padding: 2rem 0;
     flex-grow: 1;
     flex-basis: 370px;
     position: relative;
@@ -77,13 +77,12 @@
 }
 
 .hero .followers img {
-    margin-left: -1.5rem;
-    height: 4rem;
+    margin-left: -1.4rem;
+    height: clamp(3rem, 4vw, 4rem);
 }
 
 .hero .followers img:nth-child(1) {
     margin-left: 0rem;
-    height: 4rem;
 }
 
 .hero .followers__number {
@@ -91,7 +90,7 @@
 }
 
 .hero .followers__number p:nth-child(1) {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 4vw, 2rem);
     font-weight: 700;
     margin: 0;
     font-family: 'Clash Grotesk', sans-serif;
@@ -113,8 +112,8 @@
     position: absolute;
     z-index: 1;
     height: clamp(7rem, 17vw, 13rem);
-    top: 2rem;
-    left: -3rem;
+    top: 5%;
+    left: -8%;
 }
 
 .hero figure .green {
@@ -130,7 +129,7 @@
     z-index: 1;
     height: clamp(3rem, 5vw, 13rem);
     top: 55%;
-    left: -1rem;
+    left: -4%;
 }
 
 .hero figure .vscode {
@@ -138,21 +137,21 @@
     z-index: 1;
     height: clamp(3rem, 5vw, 13rem);
     top: 10%;
-    right: 3rem;
+    right: 10%;
 }
 
 .hero figure .triangle {
     position: absolute;
     z-index: 1;
     top: 35%;
-    right: 3rem;
+    right: 10%;
 }
 
 .hero figure .wordpress {
     position: absolute;
     z-index: 1;
     bottom: 1rem;
-    right: -1rem;
+    right: -4%;
     height: clamp(3rem, 5vw, 13rem);
 }
 
@@ -169,4 +168,47 @@
     height: clamp(3rem, 10vw, 13rem);
     top: 57%;
     left: -20%;
+}
+
+.platforms {
+    background: #CCDBF0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+.platforms img {
+    height: clamp(15px, 3vw, 2rem);
+}
+
+@media(max-width: 900px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero p {
+        margin: 1rem auto;
+    }
+
+    .green-dot {
+        display: none;
+    }
+
+    .yellow-dot {
+        display: none;
+    }
+
+    .btns {
+        justify-content: center;
+    }
+
+    .hero .followers {
+        justify-content: center;
+    }
+
+    .hero .get-started {
+        padding: .6rem 1rem;
+    }
 }
