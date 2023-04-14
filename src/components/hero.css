@@ -106,6 +106,7 @@
     flex-basis: 370px;
     padding: 0;
     position: relative;
+    min-height: 300px;
 }
 
 .hero figure .bulb {
