@@ -5,7 +5,6 @@ import user2 from '../assets/user2.svg';
 import user3 from '../assets/user3.svg';
 import user4 from '../assets/user4.svg';
 import user5 from '../assets/user5.svg';
-import heroImg from '../assets/HERO IMAGEE.svg';
 import greendot from '../assets/green-round.svg';
 import waves from '../assets/wavy-bg.svg';
 import yellowDot from '../assets/yellow-dot.svg';
@@ -56,7 +55,7 @@ const Hero = () => {
                     <img src={vscode} alt="" className='vscode' />
                     <img src={triangle} alt="" className='triangle' />
                     <img src={wordpress} alt="" className='wordpress' />
-                    <img src={heroImg} alt="hero" />
+                    <img src='https://res.cloudinary.com/dmztxdgak/image/upload/v1682075027/HERO_IMAGEE_rdpdlf.svg' alt="hero" />
                     <img src={curveArrow} alt="" className='curve' />
                 </figure>
             </section>
