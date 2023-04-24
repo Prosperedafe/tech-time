@@ -1,15 +1,118 @@
 .quality {
-    padding: 1rem clamp(1rem, 6vw, 10rem);
+    padding: 3rem clamp(1rem, 6vw, 10rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 3rem;
+    row-gap: 2rem;
+}
+
+.quality>div,
+.quality picture {
+    flex-grow: 1;
+    flex-basis: 400px;
+    position: relative;
 }
 
 .quality h2 {
     font-size: clamp(1.5rem, 4vw, 3rem);
     font-weight: 600;
     color: #000F24;
+    position: relative;
+}
+
+.quality h2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: clamp(20px, 5vw, 50px);
+    width: clamp(20px, 5vw, 50px);
+    background: url('../assets/h2-icon.svg');
+    background-size: cover;
+    top: -1.5rem;
+    left: -2.2rem;
 }
 
 .quality p {
     color: #A1A1A1;
     font-size: 1rem;
     font-weight: 500;
+    margin: 1rem 0;
+}
+
+.class-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.class-types>div {
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 0 .8rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.class-types p {
+    color: #000F24;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.class-types img {
+    height: 25px;
+}
+
+.quality .male {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+}
+
+.quality .female {
+    transform: translate(-8%, -60%);
+    max-width: 50%;
+}
+
+.quality .students {
+    position: absolute;
+    top: 17%;
+    right: 67%;
+    height: clamp(2rem, 6vw, 4rem);
+    z-index: 1;
+}
+
+@media(max-width: 750px) {
+    .quality h2::before {
+        top: -1.5rem;
+        left: -1.8rem;
+    }
+
+    .quality .female {
+        transform: translate(-3%, -50%);
+    }
+
+    .quality>div {
+        text-align: center;
+    }
+
+    .class-types {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 550px) {
+    .quality h2::before {
+        top: -.5rem;
+        left: -1rem;
+    }
+
+    .quality .students {
+        right: 70%;
+    }
 }

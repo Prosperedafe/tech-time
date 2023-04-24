@@ -184,6 +184,10 @@
     height: clamp(15px, 3vw, 2rem);
 }
 
+.hero-img {
+    transform: translate(0, 4px);
+}
+
 @media(max-width: 900px) {
     .hero {
         text-align: center;

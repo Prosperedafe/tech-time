@@ -55,7 +55,7 @@ const Hero = () => {
                     <img src={vscode} alt="" className='vscode' />
                     <img src={triangle} alt="" className='triangle' />
                     <img src={wordpress} alt="" className='wordpress' />
-                    <img src='https://res.cloudinary.com/dmztxdgak/image/upload/v1682075027/HERO_IMAGEE_rdpdlf.svg' alt="hero" />
+                    <img src='https://res.cloudinary.com/dmztxdgak/image/upload/v1682075027/HERO_IMAGEE_rdpdlf.svg' alt="hero" className='hero-img' />
                     <img src={curveArrow} alt="" className='curve' />
                 </figure>
             </section>

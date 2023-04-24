@@ -8,6 +8,10 @@
   --main-bg-color: #F8F9FC;
 }
 
+body {
+  background: var(--main-bg-color);
+}
+
 img {
   max-width: 100%;
 }
@@ -42,4 +46,9 @@ p,
 button,
 span {
   font-family: 'Satoshi', sans-serif;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: all .3s ease;
 }
