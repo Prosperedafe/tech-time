@@ -1,0 +1,54 @@
+.best {
+    padding: 1rem clamp(1rem, 6vw, 10rem);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.best>div {
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+
+.best_reason {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.best_reason>div {
+    background: white;
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 300px;
+    margin: auto;
+    transition: all .3s ease;
+}
+
+.best_reason>div:hover {
+    box-shadow: 1px 2px 4px rgba(45, 45, 45, 0.15);
+    transform: scale(1.02);
+}
+
+.best h3 {
+    font-size: 1rem;
+    font-family: 500;
+    margin-top: .6rem;
+    color: hsl(0, 1%, 34%);
+}
+
+.best p {
+    color: #A1A1A1;
+    margin: 1rem 0;
+}
+
+.best_reason p {
+    color: #A1A1A1;
+    font-size: .8rem;
+    font-weight: 400;
+    margin: .4rem 0;
+}

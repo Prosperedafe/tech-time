@@ -1,5 +1,5 @@
 .quality {
-    padding: 3rem clamp(1rem, 6vw, 10rem);
+    padding: 3rem clamp(1rem, 6vw, 10rem) .5rem clamp(1rem, 6vw, 10rem);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -12,13 +12,6 @@
 .quality picture {
     flex-grow: 1;
     flex-basis: 400px;
-    position: relative;
-}
-
-.quality h2 {
-    font-size: clamp(1.5rem, 4vw, 3rem);
-    font-weight: 600;
-    color: #000F24;
     position: relative;
 }
 
@@ -83,7 +76,7 @@
     position: absolute;
     top: 17%;
     right: 67%;
-    height: clamp(2rem, 6vw, 4rem);
+    height: clamp(3rem, 6vw, 4rem);
     z-index: 1;
 }
 
