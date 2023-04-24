@@ -23,7 +23,8 @@ ul {
   list-style: none;
 }
 
-li {
+li,
+button {
   cursor: pointer;
 }
 

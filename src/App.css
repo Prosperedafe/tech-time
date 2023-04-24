@@ -1,0 +1,17 @@
+:root {
+    --hero--bg: #004DB3;
+    --clr-neutral: #ffffff;
+    --brd: 5px;
+    --text-base: 1rem;
+    --text-regular: 500;
+}
+
+.bg-blue {
+    background: var(--hero--bg);
+    color: var(--clr-neutral);
+    border: 1px solid var(--hero--bg);
+    border-radius: var(--brd);
+    font-size: var(--text-base);
+    font-weight: var(--text-regular);
+    padding: calc(var(--text-base) - 5px) calc(var(--text-base) * 1.5);
+}

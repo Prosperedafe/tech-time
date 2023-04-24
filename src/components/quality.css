@@ -1,0 +1,15 @@
+.quality {
+    padding: 1rem clamp(1rem, 6vw, 10rem);
+}
+
+.quality h2 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-weight: 600;
+    color: #000F24;
+}
+
+.quality p {
+    color: #A1A1A1;
+    font-size: 1rem;
+    font-weight: 500;
+}
