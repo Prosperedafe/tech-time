@@ -1,4 +1,5 @@
 import Best from "./components/best";
+import Courses from "./components/courses/courses";
 import Hero from "./components/hero"
 import Quality from "./components/quality";
 
@@ -8,6 +9,7 @@ const Landing = () => {
             <Hero />
             <Quality />
             <Best />
+            <Courses />
         </main>
     )
 }
