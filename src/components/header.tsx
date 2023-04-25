@@ -1,48 +1,30 @@
 import logo from '../../techtime.png'
 import './header.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button } from './button';
 
 const Header = () => {
 
     const [showNav, setShowNav] = useState<boolean>(false);
-    // const menuRef = useRef<HTMLUListElement | null>(null);
-    // useOnClickOutside(menuRef, () => setShowNav(false));
 
-    // function useOnClickOutside(menuRef: HTMLUListElement, handler: any) {
-    //     useEffect(() => {
-    //         const listener = (event: any) => {
-    //             // Do nothing if clicking menuRef's element or descendent elements
-    //             if (!menuRef.current || menuRef.current.contains(event.target)) {
-    //                 return;
-    //             }
-    //             handler(event);
-    //         };
-    //         document.addEventListener("mousedown", listener);
-    //         document.addEventListener("touchstart", listener);
-    //         return () => {
-    //             document.removeEventListener("mousedown", listener);
-    //             document.removeEventListener("touchstart", listener);
-    //         };
-    //     }, [menuRef, handler]);
-    // }
+    const closeMenu = () => setShowNav(!showNav)
 
     return (
         <header>
             <nav className='header__nav'>
                 <img className='header__logo' src={logo} alt="logo" />
                 <ul className={showNav ? 'header__nav__links' : 'header__nav__links nav-close'}>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Courses</li>
-                    <li>Testimonial</li>
-                    <li>Community</li>
-                    <li>
+                    <li onClick={closeMenu}>Home</li>
+                    <li onClick={closeMenu}>About Us</li>
+                    <li onClick={closeMenu}>Courses</li>
+                    <li onClick={closeMenu}>Testimonial</li>
+                    <li onClick={closeMenu}>Community</li>
+                    <li onClick={closeMenu}>
                         <Button className='enroll-btn' content='Enroll Now' />
                     </li>
                 </ul>
-                {showNav ? < FaTimes className='menu-bar' onClick={() => setShowNav(!showNav)} size={25} color='#ffffff' /> : < FaBars className='menu-bar' onClick={() => setShowNav(!showNav)} size={25} color='#ffffff' />}
+                {showNav ? < FaTimes className='menu-bar' onClick={closeMenu} size={25} color='#ffffff' /> : < FaBars className='menu-bar' onClick={() => setShowNav(!showNav)} size={25} color='#ffffff' />}
             </nav>
         </header>
     )

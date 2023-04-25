@@ -6,6 +6,7 @@ header {
     background: var(--header--bg);
     position: relative;
     padding-bottom: 4.5rem;
+    transition: all .3s ease;
 }
 
 .header__nav {
@@ -17,6 +18,7 @@ header {
     width: 100%;
     z-index: 10;
     padding: 1rem clamp(1rem, 6vw, 10rem);
+    transition: inherit;
 }
 
 .header__logo {
@@ -31,7 +33,6 @@ header {
     font-size: 1.1rem;
     font-weight: 600;
     background: inherit;
-    transition: all .3s ease;
 }
 
 .menu-bar {
@@ -67,6 +68,7 @@ header {
         right: 0;
         padding: 3rem 3rem;
         height: calc(100vh - 2rem);
+        transition: all .3s ease;
     }
 
     .nav-close {
