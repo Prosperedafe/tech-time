@@ -1,113 +1,11 @@
 import './courses.css'
 import { useState } from 'react'
-import image from '../../assets/unsplash_ui.svg'
-import star from '../../assets/star.svg';
-import time from '../../assets/time.svg';
-import lessons from '../../assets/lessons.svg'
-import dp from '../../assets/profile.svg'
+import courses from './data'
 
 const Courses = () => {
     const [current, setCurrent] = useState<string>('category')
 
-    const courses = [
-        {
-            img: image,
-            type: 'Design',
-            rating1: '4.7k',
-            star: star,
-            rating2: '(32.7k+)',
-            topic: 'Introduction to user research in UX design',
-            timeIcon: time,
-            time: '23hrs 50mins',
-            lessonsIcon: lessons,
-            lessons: 'Lessons',
-            profilePic: dp,
-            profileName: 'Leonard Victor',
-            price: '$15.00',
-            className: 'course'
-        },
-        {
-            img: image,
-            type: 'Design',
-            rating1: '4.7k',
-            star: star,
-            rating2: '(32.7k+)',
-            topic: 'Introduction to user research in UX design',
-            timeIcon: time,
-            time: '23hrs 50mins',
-            lessonsIcon: lessons,
-            lessons: 'Lessons',
-            profilePic: dp,
-            profileName: 'Leonard Victor',
-            price: '$15.00',
-            className: 'course'
-        },
-        {
-            img: image,
-            type: 'Design',
-            rating1: '4.7k',
-            star: star,
-            rating2: '(32.7k+)',
-            topic: 'Introduction to user research in UX design',
-            timeIcon: time,
-            time: '23hrs 50mins',
-            lessonsIcon: lessons,
-            lessons: 'Lessons',
-            profilePic: dp,
-            profileName: 'Leonard Victor',
-            price: '$15.00',
-            className: 'course'
-        },
-        {
-            img: image,
-            type: 'Design',
-            rating1: '4.7k',
-            star: star,
-            rating2: '(32.7k+)',
-            topic: 'Introduction to user research in UX design',
-            timeIcon: time,
-            time: '23hrs 50mins',
-            lessonsIcon: lessons,
-            lessons: 'Lessons',
-            profilePic: dp,
-            profileName: 'Leonard Victor',
-            price: '$15.00',
-            className: 'course'
-        },
-        {
-            img: image,
-            type: 'Design',
-            rating1: '4.7k',
-            star: star,
-            rating2: '(32.7k+)',
-            topic: 'Introduction to user research in UX design',
-            timeIcon: time,
-            time: '23hrs 50mins',
-            lessonsIcon: lessons,
-            lessons: 'Lessons',
-            profilePic: dp,
-            profileName: 'Leonard Victor',
-            price: '$15.00',
-            className: 'course'
-        },
-        {
-            img: image,
-            type: 'Design',
-            rating1: '4.7k',
-            star: star,
-            rating2: '(32.7k+)',
-            topic: 'Introduction to user research in UX design',
-            timeIcon: time,
-            time: '23hrs 50mins',
-            lessonsIcon: lessons,
-            lessons: 'Lessons',
-            profilePic: dp,
-            profileName: 'Leonard Victor',
-            price: '$15.00',
-            className: 'course'
-        },
 
-    ]
 
     return (
         <section className="courses">

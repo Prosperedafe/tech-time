@@ -82,6 +82,6 @@ header {
 
 @media(width <=600px) {
     .header__nav {
-        padding: .5rem clamp(1rem, 6vw, 10rem);
+        padding: .7rem clamp(1rem, 6vw, 10rem);
     }
 }

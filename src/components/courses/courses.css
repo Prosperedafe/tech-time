@@ -50,7 +50,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .courses__types>div {
@@ -58,7 +58,7 @@
     flex-basis: 300px;
     background-color: white;
     padding: 1rem;
-    border-radius: 16px;
+    border-radius: 8px;
     max-width: 500px;
     margin: auto;
     transition: all .3s ease;
