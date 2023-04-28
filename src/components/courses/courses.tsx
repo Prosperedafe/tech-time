@@ -1,11 +1,10 @@
 import './courses.css'
 import { useState } from 'react'
 import courses from './data'
+import { Button } from '../button'
 
 const Courses = () => {
     const [current, setCurrent] = useState<string>('category')
-
-
 
     return (
         <section className="courses">
@@ -55,6 +54,7 @@ const Courses = () => {
                     })}
                 </>
             </div>
+            <Button className='explore' content='Explore All Courses' />
         </section>
     )
 }
