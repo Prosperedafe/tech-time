@@ -1,8 +1,8 @@
-import logo from '../../techtime.png'
+import logo from '../../../techtime.png'
 import './header.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useState } from "react";
-import { Button } from './button';
+import { Button } from '../button';
 
 const Header = () => {
 

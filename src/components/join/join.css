@@ -1,0 +1,44 @@
+:root {
+    --bg: #004DB3;
+    --clr-neutral: #ffffff;
+    --brd: 5px;
+    --text-base: 1rem;
+    --text-regular: 600;
+}
+
+.join {
+    background-color: var(--bg);
+    padding: calc(var(--text-base) * 3) clamp(var(--text-base), 6vw, calc(var(--text-base) * 10));
+}
+
+.join h2,
+.join p {
+    max-width: 1000px;
+    color: var(--clr-neutral);
+    margin: auto;
+    text-align: center;
+}
+
+.join-btn {
+    background: var(--clr-neutral);
+    color: var(--bg);
+    border: 2px solid var(--clr-neutral);
+    border-radius: var(--brd);
+    font-size: var(--text-base);
+    font-weight: var(--text-regular);
+    padding: calc(var(--text-base) - 5px) calc(var(--text-base) * 1.5);
+    transition: all .3s ease;
+    display: block;
+    margin: 1rem auto 0 auto;
+}
+
+.join-btn:hover {
+    color: var(--clr-neutral);
+    background: var(--bg);
+}
+
+.join figure {
+    max-width: 850px;
+    display: block;
+    margin: auto;
+}

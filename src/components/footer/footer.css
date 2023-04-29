@@ -1,0 +1,80 @@
+footer {
+    background: #000F24;
+    padding: 5rem clamp(1rem, 6vw, 10rem) 8rem clamp(1rem, 6vw, 10rem);
+    color: #ffffff;
+    max-width: 2000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+footer>div {
+    flex-grow: 1;
+    flex-basis: 250px;
+    max-width: 400px;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+footer li {
+    margin-bottom: .7rem;
+    cursor: pointer;
+}
+
+footer .reach-out p {
+    margin: 1rem 0;
+}
+
+footer .social-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .social-links img {
+    height: 25px;
+    cursor: pointer;
+}
+
+footer form {
+    display: flex;
+    border: 2px solid #054FB3;
+    border-radius: 3px;
+}
+
+footer form input {
+    border: none;
+    background: #2A2A2B;
+    font-size: 1rem;
+    padding: .6rem .5rem;
+    /* width: 100%; */
+}
+
+footer form input:focus {
+    outline: 1px solid #2A2A2B;
+}
+
+footer form input::placeholder {
+    color: #424141;
+}
+
+footer form button {
+    color: white;
+    background: #054FB3;
+    border-radius: 0px 2px 2px 0px;
+    border: none;
+    font-size: 1rem;
+    padding: .6rem 1rem;
+    flex-shrink: 0;
+}
+
+footer form button:hover {
+    transform: scale(1);
+}

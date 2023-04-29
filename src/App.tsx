@@ -1,13 +1,15 @@
-import Header from "./components/header"
-import Landing from "./landing"
+import Header from "./components/header/header"
+import Main from "./pages/landing";
 import './App.css'
+import Footer from "./components/footer/footer";
 
 function App() {
 
   return (
     <>
       <Header />
-      <Landing />
+      <Main />
+      <Footer />
     </>
   )
 }

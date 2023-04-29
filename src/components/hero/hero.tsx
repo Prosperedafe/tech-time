@@ -1,25 +1,25 @@
 import './hero.css';
-import upArrow from '../assets/arrow_outward.svg';
-import user1 from '../assets/user1.svg';
-import user2 from '../assets/user2.svg';
-import user3 from '../assets/user3.svg';
-import user4 from '../assets/user4.svg';
-import user5 from '../assets/user5.svg';
-import greendot from '../assets/green-round.svg';
-import waves from '../assets/wavy-bg.svg';
-import yellowDot from '../assets/yellow-dot.svg';
-import bulb from '../assets/bulb.svg';
-import figma from '../assets/figma-logo.svg';
-import curveArrow from '../assets/curved-arrow.svg';
-import vscode from '../assets/vscode.svg';
-import triangle from '../assets/yellow-triangle.svg';
-import wordpress from '../assets/wordpress.png';
-import zoom from '../assets/zoom.svg';
-import stripe from '../assets/stripe.svg';
-import monday from '../assets/monday.svg';
-import slack from '../assets/slack.svg';
-import dropbox from '../assets/dropbox.svg';
-import { Button } from './button';
+import upArrow from '../../assets/arrow_outward.svg';
+import user1 from '../../assets/user1.svg';
+import user2 from '../../assets/user2.svg';
+import user3 from '../../assets/user3.svg';
+import user4 from '../../assets/user4.svg';
+import user5 from '../../assets/user5.svg';
+import greendot from '../../assets/green-round.svg';
+import waves from '../../assets/wavy-bg.svg';
+import yellowDot from '../../assets/yellow-dot.svg';
+import bulb from '../../assets/bulb.svg';
+import figma from '../../assets/figma-logo.svg';
+import curveArrow from '../../assets/curved-arrow.svg';
+import vscode from '../../assets/vscode.svg';
+import triangle from '../../assets/yellow-triangle.svg';
+import wordpress from '../../assets/wordpress.png';
+import zoom from '../../assets/zoom.svg';
+import stripe from '../../assets/stripe.svg';
+import monday from '../../assets/monday.svg';
+import slack from '../../assets/slack.svg';
+import dropbox from '../../assets/dropbox.svg';
+import { Button } from '../button';
 
 const Hero = () => {
     return (

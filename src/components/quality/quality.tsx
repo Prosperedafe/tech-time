@@ -1,12 +1,12 @@
 import './quality.css';
-import { Button } from "./button";
-import audio from '../assets/audio-classes.svg';
-import recorded from '../assets/recorded-classes.svg'
-import live from '../assets/live-classes.svg';
-import notes from '../assets/notes.svg';
-import students from '../assets/students.svg'
-import maleStudents from '../assets/male-student.png'
-import femaleStudents from '../assets/female-student.png'
+import { Button } from "../button";
+import audio from '../../assets/audio-classes.svg';
+import recorded from '../../assets/recorded-classes.svg'
+import live from '../../assets/live-classes.svg';
+import notes from '../../assets/notes.svg';
+import students from '../../assets/students.svg'
+import maleStudents from '../../assets/male-student.png'
+import femaleStudents from '../../assets/female-student.png'
 
 const classes = [
     {

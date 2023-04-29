@@ -1,9 +1,9 @@
 import './best.css';
-import splashimg from '../assets/unsplash_6MePtA9EVDA.png';
-import mentors from '../assets/mentors.svg';
-import inPerson from '../assets/meetings.svg';
-import onOne from '../assets/on-on-one.svg';
-import affordable from '../assets/affordable.svg';
+import splashimg from '../../assets/unsplash_6MePtA9EVDA.png';
+import mentors from '../../assets/mentors.svg';
+import inPerson from '../../assets/meetings.svg';
+import onOne from '../../assets/on-on-one.svg';
+import affordable from '../../assets/affordable.svg';
 
 const data = [
     {

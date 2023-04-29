@@ -16,6 +16,11 @@ body {
   background: var(--main-bg-color);
 }
 
+main {
+  max-width: 2000px;
+  margin: auto;
+}
+
 img {
   max-width: 100%;
 }
