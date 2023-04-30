@@ -1,5 +1,47 @@
 .faq {
-    padding: 3rem clamp(1rem, 6vw, 10rem);
+    padding: 4rem clamp(1rem, 6vw, 10rem);
+    position: relative;
+}
+
+.faq .circle {
+    position: absolute;
+    z-index: -1;
+    top: 4.2rem;
+    right: 10%;
+}
+
+.faq .yellow {
+    position: absolute;
+    z-index: -1;
+    top: 25%;
+    left: 0;
+}
+
+.faq .dot {
+    position: absolute;
+    z-index: -1;
+    right: 10%;
+    bottom: 2rem;
+}
+
+.faq .left {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: -1rem;
+}
+
+.faq .right {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: -2rem;
+}
+
+@media(max-width: 500px) {
+    .faq .circle {
+        top: 1rem;
+    }
 }
 
 .faq>div {
@@ -14,7 +56,7 @@
 .faq h3 {
     color: #004DB3;
     font-size: 1.3rem;
-    margin-bottom: .5rem;
+    margin: 1rem 0;
 }
 
 .faq h4 {

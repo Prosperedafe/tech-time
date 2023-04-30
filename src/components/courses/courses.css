@@ -1,5 +1,13 @@
 .courses {
     padding: 2rem clamp(1rem, 6vw, 10rem);
+    position: relative;
+}
+
+.courses .pattern {
+    position: absolute;
+    z-index: -1;
+    top: 9%;
+    left: 8%;
 }
 
 .courses h2 {

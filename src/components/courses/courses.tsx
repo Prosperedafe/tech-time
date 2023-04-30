@@ -1,13 +1,15 @@
 import './courses.css'
 import { useState } from 'react'
-import courses from './data'
 import { Button } from '../button'
+import courses from './data'
+import pattern from './assets/Vector.svg';
 
 const Courses = () => {
     const [current, setCurrent] = useState<string>('category')
 
     return (
         <section className="courses">
+            <img src={pattern} className='pattern' alt="" />
             <h2>Browse our popular courses</h2>
             <p>High-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image</p>
             <div className="course__category">

@@ -4,6 +4,10 @@ import mentors from '../../assets/mentors.svg';
 import inPerson from '../../assets/meetings.svg';
 import onOne from '../../assets/on-on-one.svg';
 import affordable from '../../assets/affordable.svg';
+import yellow from './assets/yellow.svg'
+import dot from './assets/dot.svg'
+import triangle from './assets/triangle.svg'
+import circle from './assets/circle.svg'
 
 const data = [
     {
@@ -31,6 +35,10 @@ const data = [
 export default function Best() {
     return (
         <section className="best">
+            <img src={yellow} alt="" className='yellow' />
+            <img src={dot} className='dot' alt="" />
+            <img src={triangle} alt="" className='triangle' />
+            <img src={circle} alt="" className='circle' />
             <div>
                 <h2>This is why we are best from others</h2>
                 <p>High-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image</p>

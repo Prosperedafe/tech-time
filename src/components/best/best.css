@@ -1,10 +1,39 @@
 .best {
-    padding: 1rem clamp(1rem, 6vw, 10rem);
+    padding: 3rem clamp(1rem, 6vw, 10rem);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 3rem;
+    position: relative;
+}
+
+.best .yellow {
+    position: absolute;
+    right: 24%;
+    top: 0;
+    z-index: -1;
+}
+
+.best .triangle {
+    position: absolute;
+    left: 1rem;
+    bottom: 20%;
+    z-index: -1;
+}
+
+.best .dot {
+    position: absolute;
+    left: 20%;
+    top: 0;
+    z-index: -1;
+}
+
+.best .circle {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: -1;
 }
 
 .best>div {

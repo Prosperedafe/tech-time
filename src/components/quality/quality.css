@@ -1,11 +1,40 @@
 .quality {
-    padding: 3rem clamp(1rem, 6vw, 10rem) .5rem clamp(1rem, 6vw, 10rem);
+    padding: 4rem clamp(1rem, 6vw, 10rem) .5rem clamp(1rem, 6vw, 10rem);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     column-gap: 3rem;
     row-gap: 2rem;
+    position: relative;
+}
+
+.quality .green {
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    z-index: -1;
+}
+
+.quality .hash {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.quality .dots {
+    position: absolute;
+    right: -1rem;
+    bottom: 25%;
+    z-index: -1;
+}
+
+.quality .dot {
+    position: absolute;
+    right: 20%;
+    bottom: 1rem;
+    z-index: -1;
 }
 
 .quality>div,

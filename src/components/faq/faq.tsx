@@ -1,6 +1,13 @@
 import './faq.css';
-import icon from './add.svg';
+import icon from './assets/add.svg';
+import circle from './assets/circle.svg'
+import yellow from './assets/yellow.svg'
+import dot from './assets/dot.svg'
+import slash from './assets/remove.svg'
+import left from './assets/left.svg'
+import right from './assets/right.svg'
 import { useState } from 'react';
+import { FaRegGrinHearts } from 'react-icons/fa';
 
 const questions = [
     {
@@ -36,13 +43,21 @@ const Faq = () => {
 
     return (
         <section className="faq">
+            <img src={circle} className='circle' alt="" />
+            <img src={yellow} className='yellow' alt="" />
+            <img src={dot} className='dot' alt="" />
+            <img src={left} className='left' alt="" />
+            <img src={right} className='right' alt="" />
             <div>
                 <h2>Frequently Asked Questions</h2>
                 <p>
                     High-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image
                 </p>
                 <div style={{ margin: '2rem 0' }}>
-                    <h3>Is there a free trial available?</h3>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <h3>Is there a free trial available?</h3>
+                        <img src={slash} alt="" />
+                    </div>
                     <p>High-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image</p>
                 </div>
                 <div>
