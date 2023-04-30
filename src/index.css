@@ -73,3 +73,11 @@ h2 {
   color: #000F24;
   position: relative;
 }
+
+.loader {
+  min-height: 100vh;
+  background-color: #004DB3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
