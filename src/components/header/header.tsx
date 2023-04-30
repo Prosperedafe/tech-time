@@ -8,7 +8,7 @@ const Header = () => {
 
     const [showNav, setShowNav] = useState<boolean>(false);
 
-    const closeMenu = () => setShowNav(false)
+    const closeMenu = () => setShowNav(!showNav)
 
     const ref = useRef<HTMLUListElement>(null);
 
