@@ -3,13 +3,9 @@ import time from '../../assets/time.svg';
 import lessons from '../../assets/lessons.svg'
 import victor from '../../assets/profile.svg'
 import williams from '../../assets/williams.svg'
-import development from '../../assets/unsplash_development.svg'
 import mason from '../../assets/mason.svg'
-import coding from '../../assets/unsplash_coding.svg'
 import jessica from '../../assets/jessica.svg'
-import analysis from '../../assets/unsplash_analysis.svg'
 import jacobs from '../../assets/jacobs.svg'
-import live from '../../assets/unsplash_live.svg'
 import smith from '../../assets/smith.svg'
 
 const courses = [

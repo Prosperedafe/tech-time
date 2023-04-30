@@ -7,7 +7,6 @@ import slash from './assets/remove.svg'
 import left from './assets/left.svg'
 import right from './assets/right.svg'
 import { useState } from 'react';
-import { FaRegGrinHearts } from 'react-icons/fa';
 
 const questions = [
     {
