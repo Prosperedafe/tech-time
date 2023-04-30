@@ -13,7 +13,7 @@ footer {
 
 footer>div {
     flex-grow: 1;
-    flex-basis: 200px;
+    flex-basis: 270px;
     max-width: fit-content;
 }
 
@@ -46,6 +46,7 @@ footer .social-links img {
 
 footer form {
     display: flex;
+    flex-wrap: wrap;
     border: 2px solid #054FB3;
     border-radius: 3px;
 }
@@ -56,6 +57,7 @@ footer form input {
     font-size: 1rem;
     padding: .6rem .5rem;
     color: white;
+    flex-grow: 1;
 }
 
 footer form input:focus {
@@ -74,6 +76,7 @@ footer form button {
     font-size: 1rem;
     padding: .6rem 1rem;
     flex-shrink: 0;
+    flex-grow: 1;
 }
 
 footer form button:hover {
