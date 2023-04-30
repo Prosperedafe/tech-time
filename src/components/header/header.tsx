@@ -1,7 +1,7 @@
 import logo from '../../../techtime.png'
 import './header.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button } from '../button';
 
 const Header = () => {
@@ -10,11 +10,34 @@ const Header = () => {
 
     const closeMenu = () => setShowNav(!showNav)
 
+    const ref = useRef<HTMLUListElement>(null);
+
+    useOnClickOutside(ref, () => setShowNav(false));
+
+    function useOnClickOutside(ref, handler) {
+        useEffect(() => {
+            const listener = (event) => {
+                if (!ref.current || ref.current.contains(event.target)) {
+                    return;
+                }
+                handler(event);
+            };
+            document.addEventListener("mousedown", listener);
+            document.addEventListener("touchstart", listener);
+            return () => {
+                document.removeEventListener("mousedown", listener);
+                document.removeEventListener("touchstart", listener);
+            };
+        }, [ref, handler]);
+    }
+
+
+
     return (
         <header>
             <nav className='header__nav'>
                 <img className='header__logo' src={logo} alt="logo" />
-                <ul className={showNav ? 'header__nav__links' : 'header__nav__links nav-close'}>
+                <ul ref={ref} className={showNav ? 'header__nav__links' : 'header__nav__links nav-close'}>
                     <li onClick={closeMenu}>Home</li>
                     <li onClick={closeMenu}>About Us</li>
                     <li onClick={closeMenu}>Courses</li>
