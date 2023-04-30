@@ -10,6 +10,13 @@
     left: 8%;
 }
 
+@media(max-width: 500px) {
+    .courses .pattern {
+        display: none;
+    }
+
+}
+
 .courses h2 {
     text-align: center;
 }

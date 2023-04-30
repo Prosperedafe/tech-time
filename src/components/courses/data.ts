@@ -1,9 +1,7 @@
-import uximage from '../../assets/unsplash_ui.svg'
 import star from '../../assets/star.svg';
 import time from '../../assets/time.svg';
 import lessons from '../../assets/lessons.svg'
 import victor from '../../assets/profile.svg'
-import marketing from '../../assets/unsplash_marketing.svg'
 import williams from '../../assets/williams.svg'
 import development from '../../assets/unsplash_development.svg'
 import mason from '../../assets/mason.svg'
@@ -16,7 +14,7 @@ import smith from '../../assets/smith.svg'
 
 const courses = [
         {
-            img: uximage,
+            img: 'https://res.cloudinary.com/dmztxdgak/image/upload/v1682888635/tech-time/unsplash_ui_l8wi2k.svg',
             type: 'Design',
             rating1: '4.7k',
             star: star,
@@ -31,7 +29,7 @@ const courses = [
             price: '$15.00',
         },
         {
-            img: marketing,
+            img: 'https://res.cloudinary.com/dmztxdgak/image/upload/v1682888630/tech-time/unsplash_marketing_ojgpsz.svg',
             type: 'Marketing',
             rating1: '4.7k',
             star: star,
@@ -46,7 +44,7 @@ const courses = [
             price: '$32.00',
         },
         {
-            img: development,
+            img: 'https://res.cloudinary.com/dmztxdgak/image/upload/v1682888633/tech-time/unsplash_development_hjcmru.svg',
             type: 'Development',
             rating1: '4.7k',
             star: star,
@@ -61,7 +59,7 @@ const courses = [
             price: '$55.00',
         },
         {
-            img: coding,
+            img: 'https://res.cloudinary.com/dmztxdgak/image/upload/v1682888634/tech-time/unsplash_coding_tqelpx.svg',
             type: 'Development',
             rating1: '4.7k',
             star: star,
@@ -76,7 +74,7 @@ const courses = [
             price: '$45.00',
         },
         {
-            img: analysis,
+            img: 'https://res.cloudinary.com/dmztxdgak/image/upload/v1682888633/tech-time/unsplash_analysis_hjmmwo.svg',
             type: 'Marketing',
             rating1: '4.7k',
             star: star,
@@ -91,7 +89,7 @@ const courses = [
             price: '$25.00',
         },
         {
-            img: live,
+            img: 'https://res.cloudinary.com/dmztxdgak/image/upload/v1682888635/tech-time/unsplash_live_gxw2f6.svg',
             type: 'Marketing',
             rating1: '4.7k',
             star: star,

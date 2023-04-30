@@ -1,32 +1,25 @@
 import './quality.css';
 import { Button } from "../button";
-import audio from '../../assets/audio-classes.svg';
-import recorded from '../../assets/recorded-classes.svg'
-import live from '../../assets/live-classes.svg';
-import notes from '../../assets/notes.svg';
-import students from '../../assets/students.svg'
-import maleStudents from '../../assets/male-student.png'
-import femaleStudents from '../../assets/female-student.png'
-import green from './assets/green.svg'
-import hash from './assets/hash.svg'
+import green from './assets/green.svg';
+import hash from './assets/hash.svg';
 import dots from './assets/dotts.svg';
-import dot from './assets/dots.svg'
+import dot from './assets/dots.svg';
 
 const classes = [
     {
-        icon: audio,
+        icon: 'https://res.cloudinary.com/dmztxdgak/image/upload/v1682888598/tech-time/audio-classes_d32i3l.svg',
         text: 'Audio Classes'
     },
     {
-        icon: recorded,
+        icon: 'https://res.cloudinary.com/dmztxdgak/image/upload/v1682888650/tech-time/recorded-classes_pjua7b.svg',
         text: 'Recorded Classes'
     },
     {
-        icon: live,
+        icon: 'https://res.cloudinary.com/dmztxdgak/image/upload/v1682888643/tech-time/live-classes_ae9nyo.svg',
         text: 'Live Classes'
     },
     {
-        icon: notes,
+        icon: 'https://res.cloudinary.com/dmztxdgak/image/upload/v1682888647/tech-time/notes_i4sjfw.svg',
         text: '50+ Notes'
     },
 ]
@@ -54,9 +47,9 @@ const Quality = () => {
             </div>
             <picture>
                 <img src={dots} alt="" className='dots' />
-                <img className='male' src={maleStudents} alt="male student" />
-                <img className='female' src={femaleStudents} alt="female student" />
-                <img className='students' src={students} alt="students" />
+                <img className='male' src='https://res.cloudinary.com/dmztxdgak/image/upload/v1682888659/tech-time/male-student_vtpilm.png' alt="male student" />
+                <img className='female' src='https://res.cloudinary.com/dmztxdgak/image/upload/v1682888622/tech-time/female-student_bxklpk.png' alt="female student" />
+                <img className='students' src='https://res.cloudinary.com/dmztxdgak/image/upload/v1682888605/tech-time/students_asgj9w.svg' alt="students" />
             </picture>
         </section>
     )

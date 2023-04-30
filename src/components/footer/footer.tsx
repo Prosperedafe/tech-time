@@ -32,7 +32,7 @@ export default function Footer() {
                 </ul>
             </div>
             <div>
-                <h3>Useful Links</h3>
+                <h3>Community</h3>
                 <ul>
                     <li>Home</li>
                     <li>About US</li>

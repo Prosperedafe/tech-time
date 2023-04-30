@@ -1,5 +1,4 @@
 import './best.css';
-import splashimg from '../../assets/unsplash_6MePtA9EVDA.png';
 import mentors from '../../assets/mentors.svg';
 import inPerson from '../../assets/meetings.svg';
 import onOne from '../../assets/on-on-one.svg';
@@ -42,7 +41,7 @@ export default function Best() {
             <div>
                 <h2>This is why we are best from others</h2>
                 <p>High-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image</p>
-                <img src={splashimg} alt="Best Student" />
+                <img src='https://res.cloudinary.com/dmztxdgak/image/upload/v1682888619/tech-time/unsplash_6MePtA9EVDA_q7hrzi.png' alt="Best Student" />
             </div>
             <div className='best_reason'>
                 {data.map((data, index) => {
