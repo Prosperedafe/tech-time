@@ -67,7 +67,7 @@ header {
         top: 0;
         right: 0;
         padding: 3rem 3rem;
-        min-height: 100vh;
+        height: 100vh;
         transition: all .3s ease;
     }
 

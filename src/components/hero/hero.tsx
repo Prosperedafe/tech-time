@@ -1,6 +1,7 @@
 import './hero.css';
 import upArrow from '../../assets/arrow_outward.svg';
 import { Button } from '../button';
+import hero from '../../../HERO IMAGEE.png'
 
 const Hero = () => {
     return (
@@ -36,7 +37,7 @@ const Hero = () => {
                     <img src='https://res.cloudinary.com/dmztxdgak/image/upload/v1682888638/tech-time/vscode_wgm4mm.svg' alt="" className='vscode' />
                     <img src='https://res.cloudinary.com/dmztxdgak/image/upload/v1682888640/tech-time/yellow-triangle_q8dxj7.svg' alt="" className='triangle' />
                     <img src='https://res.cloudinary.com/dmztxdgak/image/upload/v1682888639/tech-time/wordpress_c5mjz8.svg' alt="" className='wordpress' />
-                    <img src='https://res.cloudinary.com/dmztxdgak/image/upload/v1682075027/HERO_IMAGEE_rdpdlf.svg' alt="hero" className='hero-img' />
+                    <img src={hero} alt="hero" className='hero-img' />
                     <img src='https://res.cloudinary.com/dmztxdgak/image/upload/v1682888604/tech-time/curved-arrow_aqr3qf.svg' alt="" className='curve' />
                 </figure>
             </section>
