@@ -10,7 +10,7 @@ const Header = () => {
 
     const closeMenu = () => setShowNav(!showNav)
 
-    const ref = useRef<HTMLUListElement>(null);
+    const ref = useRef<HTMLUListElement | any>(null);
 
     useOnClickOutside(ref, () => setShowNav(false));
 
@@ -47,7 +47,9 @@ const Header = () => {
                         <Button className='enroll-btn' content='Enroll Now' />
                     </li>
                 </ul>
-                {showNav ? < FaTimes className='menu-bar' onClick={closeMenu} size={25} color='#ffffff' /> : < FaBars className='menu-bar' onClick={() => setShowNav(!showNav)} size={25} color='#ffffff' />}
+                <div ref={ref} className='menu-bar'>
+                    {showNav ? <FaTimes onClick={closeMenu} size={25} color='#ffffff' /> : < FaBars onClick={() => setShowNav(!showNav)} size={25} color='#ffffff' />}
+                </div>
             </nav>
         </header>
     )

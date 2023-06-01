@@ -64,11 +64,11 @@ header {
         flex-direction: column;
         align-items: flex-start;
         position: absolute;
-        top: 0;
+        top: 100%;
         right: 0;
         padding: 3rem 3rem;
         height: 100vh;
-        transition: all .3s ease;
+        transition: all .5s ease;
     }
 
     .nav-close {
